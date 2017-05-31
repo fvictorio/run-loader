@@ -1,6 +1,6 @@
 {
   "name": "run-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An utility to test loaders from the command line",
   "main": "index.js",
   "bin": {
