@@ -21,7 +21,8 @@ loaders.forEach(loader => {
   try {
     require(loader.path)
   } catch (e) {
-    console.warn(`Loader ${loader.name} is not installed`);
+    console.warn(`There was a problem loading ${loader.name}`);
+    console.warn(e);
     process.exit(1);
   }
 })
