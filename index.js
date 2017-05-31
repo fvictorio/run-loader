@@ -42,5 +42,5 @@ runLoaders({
 })
 
 function usage() {
-  console.log('Usage: sarasa loader1 loader2 ... loaderN file');
+  console.log('Usage: run-loader loader1 loader2 ... loaderN file');
 }
