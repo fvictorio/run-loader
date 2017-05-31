@@ -1,0 +1,19 @@
+{
+  "name": "run-loader",
+  "version": "0.0.1",
+  "description": "An utility to test loaders from the command line",
+  "main": "index.js",
+  "bin": {
+    "run-loader": "./index.js"
+  },
+  "dependencies": {
+    "loader-runner": "^2.3.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "cli",
+    "webpack"
+  ],
+  "author": "Franco Victorio",
+  "license": "MIT"
+}
