@@ -15,7 +15,7 @@ const loaders = process.argv.slice(2, process.argv.length - 1)
     name: loader,
     path: path.join(cwd, 'node_modules', loader)
   }))
-const file = path.join(cwd, process.argv[process.argv.length - 1])
+const file = process.argv[process.argv.length - 1]
 
 loaders.forEach(loader => {
   try {
@@ -32,7 +32,7 @@ if (!fs.existsSync(file)) {
 }
 
 runLoaders({
-  resource: path.join(__dirname, file),
+  resource: path.join(cwd, file),
   loaders: loaders.map(loader => loader.path),
   readResource: fs.readFile.bind(fs)
 }, (err, result) => {
