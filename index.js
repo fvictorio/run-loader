@@ -35,7 +35,10 @@ if (!fs.existsSync(file)) {
 runLoaders({
   resource: path.join(cwd, file),
   loaders: loaders.map(loader => loader.path),
-  readResource: fs.readFile.bind(fs)
+  readResource: fs.readFile.bind(fs),
+  context: {
+    options: {}
+  }
 }, (err, result) => {
   if (err) {
     console.warn(err);
